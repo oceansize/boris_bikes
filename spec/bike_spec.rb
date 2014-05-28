@@ -13,4 +13,11 @@ describe 'Bike' do
     expect(the_bike).to be_broken
   end
 
+  it 'should be possible to fix bike' do
+    the_bike = Bike.new
+    the_bike.break!
+    the_bike.fix!
+    expect(the_bike).to_not be_broken
+  end
+
 end
