@@ -4,12 +4,14 @@ class Bike
     @broken = false
   end
 
-  def break!
-    @broken = true
+  def broken?
+    # is the bike broken?
+    @broken
   end
 
-  def broken?
-    @broken
+  def break!
+    # uh-oh, you broke the bike.
+    @broken = true
   end
 
 end
